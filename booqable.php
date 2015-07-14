@@ -6,7 +6,7 @@
     Author: Johan van Zonneveld
     Version: 1.0
     Author URI: https://booqable.com
-    Copyright: 2004 - 2015 Checkfront Inc
+    Copyright: 2015 Booqable
     */
 
 
