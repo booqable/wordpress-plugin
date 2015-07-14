@@ -49,14 +49,33 @@ add_action('widgets_init',
 
 function booqable_product_bb($params) {
 
-	// default parameters
-	extract(shortcode_atts(array(
-		'id' => ''
-	), $params));
+  // default parameters
+  extract(shortcode_atts(array(
+    'id' => '',
+    'show_price' => '',
+    'label' => ''
+  ), $params));
 
-  return '<div class="booqable-product-component" data-id="' . $id . '"></div>';
+  return '<div class="booqable-product-component"
+    data-id="' . $id . '"
+    data-label="' . $label . '"
+    data-show-price="' . $show_price . '"></div>';
 }
 
-add_shortcode('booqableproduct','booqable_product_bb');
+add_shortcode('booqable_product','booqable_product_bb');
+
+function booqable_cart_bb($params) {
+  // default parameters
+  extract(shortcode_atts(array(
+    'checkout_url' => '',
+    'label' => ''
+  ), $params));
+
+  return '<div id="booqable-cart-component"
+    data-label="' . $label . '"
+    data-checkout-url="' . $checkout_url . '"></div>';
+}
+
+add_shortcode('booqable_cart','booqable_cart_bb');
 
 ?>
