@@ -49,26 +49,7 @@ add_action('widgets_init',
 
 function booqable_company_url() {
   $slug = get_option('booqable_company_name');
-
-  // replace non letter or digits by -
-  $slug = preg_replace('~[^\\pL\d]+~u', '-', $slug);
-
-  // trim
-  $slug = trim($slug, '-');
-
-  // transliterate
-  $slug = iconv('utf-8', 'us-ascii//TRANSLIT', $slug);
-
-  // lowercase
-  $slug = strtolower($slug);
-
-  // remove unwanted characters
-  $slug = preg_replace('~[^-\w]+~', '', $slug);
-
-  if (empty($slug))
-  {
-    return 'n-a';
-  }
+  $slug = sanitize_title_with_dashes($slug, null, 'save');
 
   return 'https://' . $slug . '.booqable.com';
 }
