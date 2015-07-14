@@ -45,6 +45,34 @@ add_action('widgets_init',
   create_function('', 'return register_widget("BooqableCartWidget");')
 );
 
+## Company url function
+
+function booqable_company_url() {
+  $slug = get_option('booqable_company_name');
+
+  // replace non letter or digits by -
+  $slug = preg_replace('~[^\\pL\d]+~u', '-', $slug);
+
+  // trim
+  $slug = trim($slug, '-');
+
+  // transliterate
+  $slug = iconv('utf-8', 'us-ascii//TRANSLIT', $slug);
+
+  // lowercase
+  $slug = strtolower($slug);
+
+  // remove unwanted characters
+  $slug = preg_replace('~[^-\w]+~', '', $slug);
+
+  if (empty($slug))
+  {
+    return 'n-a';
+  }
+
+  return 'https://' . $slug . '.booqable.com';
+}
+
 ## Add BBcode function
 
 function booqable_product_bb($params) {
@@ -77,5 +105,21 @@ function booqable_cart_bb($params) {
 }
 
 add_shortcode('booqable_cart','booqable_cart_bb');
+
+function booqable_checkout_bb($params) {
+
+  // default parameters
+  extract(shortcode_atts(array(
+    'width' => '100%',
+    'height' => '500'
+  ), $params));
+
+  return '<iframe src="' . booqable_company_url() . '/store/checkout"
+    width="' . $width . '"
+    height="' . $height . '"
+    ></div>';
+}
+
+add_shortcode('booqable_checkout','booqable_checkout_bb');
 
 ?>
