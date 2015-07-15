@@ -28,7 +28,7 @@ function add_booqable_js() { ?>
   <script>
     var booqableOptions = {
       companyName: '<?php echo get_option('booqable_company_name'); ?>',
-      showPrices: <?php echo get_option('booqable_show_prices'); ?>,
+      showPrices: '<?php echo get_option('booqable_show_prices'); ?>',
       defaultLabel: '<?php echo get_option('booqable_default_label'); ?>'
     };
   </script>
