@@ -4,7 +4,7 @@
     Plugin URI: https://booqable.com
     Description: Let your customers directly book products from your website
     Author: Johan van Zonneveld
-    Version: 1.0
+    Version: 1.0.0.beta
     Author URI: https://booqable.com
     Copyright: 2015 Booqable
     */
