@@ -61,14 +61,14 @@ function booqable_product_bb($params) {
   // default parameters
   extract(shortcode_atts(array(
     'id' => '',
-    'show_price' => '',
+    'show_prices' => '',
     'label' => ''
   ), $params));
 
   return '<div class="booqable-product-component"
     data-id="' . $id . '"
     data-label="' . $label . '"
-    data-show-price="' . $show_price . '"></div>';
+    data-show-prices="' . $show_prices . '"></div>';
 }
 
 add_shortcode('booqable_product','booqable_product_bb');

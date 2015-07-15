@@ -44,7 +44,7 @@
             <p class="description"><?php _e(" ex: Add to cart" ); ?></p>
           </td>
         </tr>
-        <tr>
+        <!-- <tr>
           <th scope="row">
             <label for="booqable_show_prices"><?php _e("Show prices" ); ?></label>
           </th>
@@ -54,7 +54,7 @@
               <option value="false" <?php if ($show_prices == "false") { echo "selected"; } ?>>No</option>
             </select>
           </td>
-        </tr>
+        </tr> -->
       </tbody>
     </table>
 
