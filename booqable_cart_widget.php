@@ -26,9 +26,8 @@
       ?>
       <p>
         <label for="<?php echo $this->get_field_id( 'checkout_url' ); ?>"><?php _e( 'Chekcout url:' ); ?></label>
-        <input class="widefat" id="<?php echo $this->get_field_id( 'checkout_url' ); ?>" name="<?php echo $this->get_field_name( 'checkout_url' ); ?>" type="text" value="<?php echo esc_attr( $checkout_url ); ?>">
+        <input class="widefat" id="<?php echo $this->get_field_id( 'checkout_url' ); ?>" name="<?php echo $this->get_field_name( 'checkout_url' ); ?>" type="text" value="<?php echo esc_attr( $checkout_url ); ?>" placeholder="Leave blank to use the Booqable hosted checkout...">
       </p>
-      <p class="description">Leave blank to use the Booqable hosted checkout</p>
 
       <p>
         <label for="<?php echo $this->get_field_id( 'button_label' ); ?>"><?php _e( 'Button label:' ); ?></label>
