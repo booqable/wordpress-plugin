@@ -29,7 +29,8 @@ function add_booqable_js() { ?>
     var booqableOptions = {
       companyName: '<?php echo get_option('booqable_company_name'); ?>',
       showPrices: '<?php echo get_option('booqable_show_prices'); ?>',
-      defaultLabel: '<?php echo get_option('booqable_default_label'); ?>'
+      addButtonLabel: '<?php echo get_option('booqable_add_button_label'); ?>',
+      addedButtonLabel: '<?php echo get_option('booqable_added_button_label'); ?>'
     };
   </script>
   <script src="http://assets.booqable.dev/assets/store/booqable_v1.js"></script>
@@ -62,12 +63,14 @@ function booqable_product_bb($params) {
   extract(shortcode_atts(array(
     'id' => '',
     'show_prices' => '',
-    'label' => ''
+    'add_button_label' => '',
+    'added_button_label' => ''
   ), $params));
 
   return '<div class="booqable-product-component"
     data-id="' . $id . '"
-    data-label="' . $label . '"
+    data-add-button-label="' . $add_button_label . '"
+    data-added-button-label="' . $added_button_label . '"
     data-show-prices="' . $show_prices . '"></div>';
 }
 
@@ -77,11 +80,11 @@ function booqable_cart_bb($params) {
   // default parameters
   extract(shortcode_atts(array(
     'checkout_url' => '',
-    'label' => ''
+    'checkout_button_label' => ''
   ), $params));
 
   return '<div id="booqable-cart-component"
-    data-label="' . $label . '"
+    data-checkout-button-label="' . $checkout_button_label . '"
     data-checkout-url="' . $checkout_url . '"></div>';
 }
 

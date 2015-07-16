@@ -4,8 +4,11 @@
     $company_name = $_POST['booqable_company_name'];
     update_option('booqable_company_name', $company_name);
 
-    $default_label = $_POST['booqable_default_label'];
-    update_option('booqable_default_label', $default_label);
+    $booqable_add_button_label = $_POST['booqable_add_button_label'];
+    update_option('booqable_add_button_label', $booqable_add_button_label);
+
+    $booqable_added_button_label = $_POST['booqable_added_button_label'];
+    update_option('booqable_added_button_label', $booqable_added_button_label);
 
     $show_prices = $_POST['booqable_show_prices'];
     update_option('booqable_show_prices', $show_prices);
@@ -14,7 +17,8 @@
     <?php
   } else {
     $company_name = get_option('booqable_company_name');
-    $default_label = get_option('booqable_default_label');
+    $booqable_add_button_label = get_option('booqable_add_button_label');
+    $booqable_added_button_label = get_option('booqable_added_button_label');
     $show_prices = get_option('booqable_show_prices');
   }
 ?>
@@ -37,11 +41,20 @@
         </tr>
         <tr>
           <th scope="row">
-            <label for="booqable_default_label"><?php _e("Button label" ); ?></label>
+            <label for="booqable_add_button_label"><?php _e("Add to cart button label" ); ?></label>
           </th>
           <td>
-            <input type="text" name="booqable_default_label" value="<?php echo $default_label; ?>" size="20" class="regular-text">
+            <input type="text" name="booqable_add_button_label" value="<?php echo $booqable_add_button_label; ?>" size="20" class="regular-text">
             <p class="description"><?php _e(" ex: Add to cart" ); ?></p>
+          </td>
+        </tr>
+        <tr>
+          <th scope="row">
+            <label for="booqable_added_button_label"><?php _e("Added to cart button label" ); ?></label>
+          </th>
+          <td>
+            <input type="text" name="booqable_added_button_label" value="<?php echo $booqable_added_button_label; ?>" size="20" class="regular-text">
+            <p class="description"><?php _e(" ex: Added. Go to cart" ); ?></p>
           </td>
         </tr>
         <!-- <tr>
