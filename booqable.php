@@ -2,7 +2,7 @@
     /*
     Plugin Name: Booqable Booking plugin
     Plugin URI: https://booqable.com
-    Description: Let your customers directly book products from your website
+    Description: Let your customers directly make rental reservations from your website
     Author: Johan van Zonneveld
     Version: 1.0.0.beta
     Author URI: https://booqable.com
