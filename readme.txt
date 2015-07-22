@@ -1,8 +1,8 @@
 === Plugin Name ===
 Contributors: booqable-rental-software, jhnvz
-Tags: Rental Software, Bookings, Reservations
-Requires at least: 3.0.1
-Tested up to: 3.4
+Tags: Rental Software, Bookings, Reservations, Activity Booking, availability, Booking, booking engine, booking plugin, Booking Software, booking system, bookings, online booking, Rental Booking, Reservation, reservation plugin, reservation system
+Requires at least: 2.0
+Tested up to: 4.2.2
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -11,8 +11,9 @@ Let your customers directly make rental reservations from your website.
 
 == Description ==
 
-Make sure to sign up for an account at https://booqable.com first.
-After you've added the products you wan't to rent out you can install the plugin.
+**Booqable** is easy to use Online Rental Software. It's used by rental companies, large organizations and universities all over the world.
+
+Make sure to sign up for an account at https://booqable.com first and activate the "Store plugin". After you add products you wan't to rent out you can install the plugin and start accepting online reservations.
 
 == Installation ==
 
