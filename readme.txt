@@ -17,9 +17,9 @@ Make sure to sign up for an account at https://booqable.com first and activate t
 
 == Installation ==
 
-1. Upload the `booqable` directory to the `/wp-content/plugins/` directory
-1. Activate the plugin through the 'Plugins' menu in WordPress
-1. Setup your company name in the booqable plugin settings
+1. Install the Booqable Booking plugin in your Wordpress admin by going to *'Plugins / Add New'* and  searching for *'Booqable'*,  **(or)** If doing a manual install, download the plugin and unzip into your `/wp-content/plugins/` directory.
+2. Activate the the plugin through the 'Plugins' menu in WordPress.
+3. Setup your company name in the Booqable plugin settings
 
 == Changelog ==
 
