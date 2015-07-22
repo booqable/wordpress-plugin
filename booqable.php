@@ -33,7 +33,7 @@ function add_booqable_js() { ?>
       addedButtonLabel: '<?php echo get_option('booqable_added_button_label'); ?>'
     };
   </script>
-  <script src="http://assets.booqable.dev/assets/store/booqable_v1.js"></script>
+  <script src="https://d4lmxg2kcswpo.cloudfront.net/assets/store/booqable_v1.js"></script>
 <?php }
 
 add_action('wp_head', 'add_booqable_js');
