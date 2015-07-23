@@ -22,9 +22,18 @@ function booqable_admin_actions() {
 
 add_action('admin_menu', 'booqable_admin_actions');
 
-// Add client to header
+// Load client script
 
-function add_booqable_js() { ?>
+function add_booqable_js() {
+  wp_enqueue_script('booqable_v1', 'https://d4lmxg2kcswpo.cloudfront.net/assets/store/booqable_v1.js', array(), '1.0.0', true);
+}
+
+add_action('wp_enqueue_scripts', 'add_booqable_js');
+
+// Insert client configuration
+
+function add_booqable_client_configuration_js() {
+  ?>
   <script>
     var booqableOptions = {
       companyName: '<?php echo get_option('booqable_company_name'); ?>',
@@ -33,10 +42,10 @@ function add_booqable_js() { ?>
       addedButtonLabel: '<?php echo get_option('booqable_added_button_label'); ?>'
     };
   </script>
-  <script src="https://d4lmxg2kcswpo.cloudfront.net/assets/store/booqable_v1.js"></script>
-<?php }
+  <?php
+}
 
-add_action('wp_head', 'add_booqable_js');
+add_action('wp_head', 'add_booqable_client_configuration_js');
 
 // Add cart widget
 
