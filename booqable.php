@@ -10,7 +10,7 @@
     */
 
 
-## Booqable admin
+// Booqable admin
 
 function booqable_admin() {
   include('booqable_admin.php');
@@ -22,7 +22,7 @@ function booqable_admin_actions() {
 
 add_action('admin_menu', 'booqable_admin_actions');
 
-## Add client to header
+// Add client to header
 
 function add_booqable_js() { ?>
   <script>
@@ -38,7 +38,7 @@ function add_booqable_js() { ?>
 
 add_action('wp_head', 'add_booqable_js');
 
-## Add cart widget
+// Add cart widget
 
 include('booqable_cart_widget.php');
 
@@ -46,7 +46,7 @@ add_action('widgets_init',
   create_function('', 'return register_widget("BooqableCartWidget");')
 );
 
-## Company url function
+// Company url function
 
 function booqable_company_url() {
   $slug = get_option('booqable_company_name');
@@ -55,7 +55,7 @@ function booqable_company_url() {
   return 'https://' . $slug . '.booqable.com';
 }
 
-## Add BBcode function
+// Add BBcode function
 
 function booqable_product_bb($params) {
 
