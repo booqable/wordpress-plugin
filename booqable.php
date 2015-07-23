@@ -1,6 +1,6 @@
 <?php
     /*
-    Plugin Name: Booqable Booking plugin
+    Plugin Name: Booqable Rental Reservations
     Plugin URI: https://booqable.com
     Description: Enables your customers to make rental reservations from your website by Connecting Wordpress to the Booqable Reservation Software. Reservations are securly stored in the Booqable backoffice app.
     Author: Johan van Zonneveld
