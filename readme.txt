@@ -34,5 +34,9 @@ Enables your customers to make rental reservations from your website by Connecti
 
 == Changelog ==
 
+= 1.0.1.beta =
+* Improve security
+* Add documentation
+
 = 1.0.0.beta =
 * First beta release
