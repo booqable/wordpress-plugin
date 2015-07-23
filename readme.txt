@@ -29,8 +29,10 @@ Enables your customers to make rental reservations from your website by Connecti
 
 == Screenshots ==
 
-1. Watch new orders coming in from your Wordpress website.
-2. Super easy to setup and fully customizable.
+1. Booqable order interface.
+2. Booqable planner.
+3. Booking plugin integrated into Wordpress.
+4. Secure Booqable hosted checkout.
 
 == Changelog ==
 
