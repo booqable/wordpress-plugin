@@ -7,7 +7,7 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Enables your customers to make rental reservations from your website by Connecting Wordpress to Booqable Reservation Software. Reservations are securly stored in the Booqable backoffice app.
+Enables your customers to make rental reservations from your website by Connecting Wordpress to Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
 
 == Description ==
 
