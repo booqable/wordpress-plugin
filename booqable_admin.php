@@ -1,16 +1,24 @@
 <?php
   if($_POST['booqable_hidden'] == 'Y') {
     //Form data sent
-    $company_name = $_POST['booqable_company_name'];
+    $company_name = sanitize_text_field($_POST['booqable_company_name']);
     update_option('booqable_company_name', $company_name);
 
-    $booqable_add_button_label = $_POST['booqable_add_button_label'];
+    $booqable_add_button_label = sanitize_text_field($_POST['booqable_add_button_label']);
     update_option('booqable_add_button_label', $booqable_add_button_label);
 
-    $booqable_added_button_label = $_POST['booqable_added_button_label'];
+    $booqable_added_button_label = sanitize_text_field($_POST['booqable_added_button_label']);
     update_option('booqable_added_button_label', $booqable_added_button_label);
 
-    $show_prices = $_POST['booqable_show_prices'];
+    // Don't process values that aren't boolean
+
+    $show_prices = strtolower($_POST['booqable_show_prices']);
+    if (in_array($show_prices, array("true", "false", "1", "0", "yes", "no"), true)) {
+      $show_prices = $_POST['booqable_show_prices'];
+    } else {
+      $show_prices = '';
+    }
+
     update_option('booqable_show_prices', $show_prices);
     ?>
     <div class="updated"><p><strong><?php _e('Options saved.' ); ?></strong></p></div>
