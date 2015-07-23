@@ -7,19 +7,25 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Let your customers directly make rental reservations from your website.
+Enables your customers to make rental reservations from your website by Connecting Wordpress to Booqable Reservation Software. Reservations are securly stored in the Booqable backoffice app.
 
 == Description ==
 
 **Booqable** is easy to use Online Rental Software. It's used by rental companies, large organizations and universities all over the world.
 
-Make sure to sign up for an account at https://booqable.com first and activate the "Store plugin". After you add products you wan't to rent out you can install the plugin and start accepting online reservations.
-
 == Installation ==
 
 1. Install the Booqable Booking plugin in your Wordpress admin by going to *'Plugins / Add New'* and  searching for *'Booqable'*,  **(or)** If doing a manual install, download the plugin and unzip into your `/wp-content/plugins/` directory.
 2. Activate the the plugin through the 'Plugins' menu in WordPress.
-3. Setup your company name in the Booqable plugin settings
+
+= Configuration =
+
+1. Signup for an account at https://booqable.com if you haven't already.
+2. Enable the `Store add-on` in the add-ons section.
+3. Start adding your inventory in the Booqable backoffce app.
+4. Setup your company name in the Booqable plugin settings in Wordpress.
+5. Activate the cart widget and configure your desired settings.
+5. Create a Wordpress **Post** or **Page** and embed the Booqable Add to Cart button by using the shortcode: `[booqable_product id=1]` (Go to the add-on settings in your Booqable account to find the shortcodes for each product and more options to pass to the shortcode).
 
 == Screenshots ==
 
