@@ -21,6 +21,11 @@ Make sure to sign up for an account at https://booqable.com first and activate t
 2. Activate the the plugin through the 'Plugins' menu in WordPress.
 3. Setup your company name in the Booqable plugin settings
 
+== Screenshots ==
+
+1. Watch new orders coming in from your Wordpress website.
+2. Super easy to setup and fully customizable.
+
 == Changelog ==
 
 = 1.0.0.beta =
