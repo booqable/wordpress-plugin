@@ -2,7 +2,7 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: Rental Software, Bookings, Reservations, Booking, booking engine, booking plugin, Booking Software, booking system, bookings, online booking, Rental Booking, Reservation, reservation plugin, reservation system, reservation software
 Requires at least: 2.0
-Tested up to: 4.2.2
+Tested up to: 4.7.5
 Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
