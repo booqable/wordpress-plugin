@@ -7,7 +7,9 @@ Stable tag: 4.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Enables your customers to make rental reservations from your website by Connecting Wordpress to Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
+Booqable's Shop add-on offers you an online storefront where your customers can make rental reservations 24/7. You can implement the add-on on WordPress, Squarespace, Shopify, or pretty much any other website.
+
+When your customer makes a booking, an order is automatically generated in your Booqable backend.
 
 == Description ==
 
@@ -16,29 +18,22 @@ Enables your customers to make rental reservations from your website by Connecti
 == Installation ==
 
 1. Install the Booqable Booking plugin in your Wordpress admin by going to *'Plugins / Add New'* and  searching for *'Booqable'*,  **(or)** If doing a manual install, download the plugin and unzip into your `/wp-content/plugins/` directory.
-2. Activate the the plugin through the 'Plugins' menu in WordPress.
+2. Activate the plugin through the 'Plugins' menu in WordPress.
 
 = Configuration =
 
 1. Signup for an account at https://booqable.com if you haven't already.
-2. Enable the `Store add-on` in the add-ons section.
+2. Enable the `Shop add-on` in the add-ons section.
 3. Start adding your inventory in the Booqable backoffce app.
 4. Setup your company name in the Booqable plugin settings in Wordpress.
-5. Activate the cart widget and configure your desired settings.
-5. Create a Wordpress **Post** or **Page** and embed the Booqable Add to Cart button by using the shortcode: `[booqable_product id=1]` (Go to the add-on settings in your Booqable account to find the shortcodes for each product and more options to pass to the shortcode).
+5. Create a Wordpress **Post** or **Page** and embed a product, product detail, product button and/or product list component
 
 == Screenshots ==
 
 1. Booqable order interface.
 2. Booqable planner.
-3. Booking plugin integrated into Wordpress.
-4. Secure Booqable hosted checkout.
 
 == Changelog ==
 
-= 1.0.1.beta =
-* Improve security
-* Add documentation
-
-= 1.0.0.beta =
+= 2.0.0.beta =
 * First beta release
