@@ -35,5 +35,5 @@ When your customer makes a booking, an order is automatically generated in your 
 
 == Changelog ==
 
-= 2.0.0.beta =
+= 2.0.0 =
 * First beta release
