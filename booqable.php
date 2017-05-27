@@ -24,7 +24,7 @@ add_action('admin_menu', 'booqable_admin_actions');
 // Load client script
 
 function add_booqable_js() {
-  wp_enqueue_script('booqable_v2', 'http://irent.booqable.dev/assets/store/booqable_v2.js', array(), '2.0.0', true);
+  wp_enqueue_script('booqable_v2', 'https://d4lmxg2kcswpo.cloudfront.net/assets/store/booqable_v2.js', array(), '2.0.0', true);
 }
 
 add_action('wp_enqueue_scripts', 'add_booqable_js');
