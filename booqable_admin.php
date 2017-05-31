@@ -1,14 +1,14 @@
 <?php
   if($_POST['booqable_hidden'] == 'Y') {
     //Form data sent
-    $company = sanitize_text_field($_POST['booqable_company']);
-    update_option('booqable_company', $company);
+    $company = sanitize_text_field($_POST['booqable_company_name']);
+    update_option('booqable_company_name', $company);
 
     ?>
     <div class="updated"><p><strong><?php _e('Options saved.' ); ?></strong></p></div>
     <?php
   } else {
-    $company = get_option('booqable_company');
+    $company = get_option('booqable_company_name');
   }
 ?>
 
@@ -21,11 +21,11 @@
       <tbody>
         <tr>
           <th scope="row">
-            <label for="booqable_company"><?php _e("Company" ); ?></label>
+            <label for="booqable_company_name"><?php _e("Company" ); ?></label>
           </th>
           <td>
-            <input type="text" name="booqable_company" value="<?php echo $company; ?>" size="20" class="regular-text">
-            <p class="description"><?php _e(" ex: irent" ); ?></p>
+            <input type="text" name="booqable_company_name" value="<?php echo $company; ?>" size="20" class="regular-text">
+            <p class="description"><?php _e(" Your company ID or slug, go to Settings > Shop in your Booqable account" ); ?></p>
           </td>
         </tr>
       </tbody>
