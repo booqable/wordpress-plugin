@@ -3,7 +3,7 @@ Contributors: booqable-rental-software, jhnvz
 Tags: Rental Software, Bookings, Reservations, Booking, booking engine, booking plugin, Booking Software, booking system, bookings, online booking, Rental Booking, Reservation, reservation plugin, reservation system, reservation software
 Requires at least: 2.0
 Tested up to: 4.7.5
-Stable tag: 4.3
+Stable tag: 4.7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,16 +22,18 @@ When your customer makes a booking, an order is automatically generated in your 
 
 = Configuration =
 
-1. Signup for an account at https://booqable.com if you haven't already.
-2. Enable the `Shop add-on` in the add-ons section.
-3. Start adding your inventory in the Booqable backoffce app.
+1. Signup for an account at https://signup.booqable.com if you haven't already.
+2. Enable the `Shop` add-on in the add-ons section.
+3. Start adding your inventory.
 4. Setup your company name in the Booqable plugin settings in Wordpress.
 5. Create a Wordpress **Post** or **Page** and embed a product, product detail, product button and/or product list component
 
 == Screenshots ==
 
-1. Booqable order interface.
-2. Booqable planner.
+1. Product widgets, realtime availability and floating cart
+2. Checkout
+3. Booqable backend
+4. Process payments
 
 == Changelog ==
 
