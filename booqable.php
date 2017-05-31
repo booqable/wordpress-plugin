@@ -18,7 +18,6 @@ function booqable_admin() {
 function booqable_admin_actions() {
   add_options_page("Booqable", "Booqable", 1, "Booqable", "booqable_admin");
 }
-
 add_action('admin_menu', 'booqable_admin_actions');
 
 // Load client script
@@ -29,79 +28,77 @@ function add_booqable_js() {
 
 add_action('wp_enqueue_scripts', 'add_booqable_js');
 
-// Media buttons
-function add_booqable_media_buttons( $editor_id ) {
-	?>
-	<button id="secp-add-shortcode" class="button secp-add-shortcode" data-editor-id="<?php echo esc_attr( $editor_id ); ?>">
-		<?php esc_html_e( 'Add Booqable Component', 'add-booqable-component' ); ?>
-	</button>
-	<?php
-}
-add_action( 'media_buttons', 'add_booqable_media_buttons' );
-
 // Insert client configuration
-
 function add_booqable_client_configuration_js() {
   ?>
-  <script>
-    var booqableOptions = {
-      company: '<?php echo get_option('booqable_company'); ?>'
-    };
-  </script>
+  <script>var booqableOptions = { company: '<?php echo get_option('booqable_company_name'); ?>' };</script>
   <?php
 }
-
 add_action('wp_head', 'add_booqable_client_configuration_js');
 
-// Company url function
+// BBcodes
 
-function booqable_company_url() {
-  $slug = get_option('booqable_company');
-  $slug = sanitize_title_with_dashes($slug, null, 'save');
+// Convert shortcode options to data-{key}={value}
+function shortcode_options_to_data($options) {
+  $data = implode(' ', array_map(
+    function ($v, $k) {
+      if (! empty($v)) {
+        return sprintf("data-%s=\"%s\"", $k, $v);
+      }
+    },
+    $options,
+    array_keys($options)
+  ));
 
-  return 'https://' . $slug . '.booqable.shop';
+  return $data;
 }
 
-// Add BBcode function
+// BBcode for embedding a product
+// [booqable_card id="ipad"]
+function booqable_card_bb($params) {
+  $options = shortcode_atts(array(
+    'id' => NULL
+  ), $params);
 
-function booqable_product_bb($params) {
-
-  // default parameters
-  extract(shortcode_atts(array(
-    'id' => ''
-  ), $params));
-
-  return '<div class="booqable-product" data-id="' . $id . '"></div>';
+  return '<div class="booqable-product" ' . shortcode_options_to_data($options) . '></div>';
 }
+add_shortcode('booqable_card', 'booqable_card_bb');
 
-function booqable_product_button_bb($params) {
+// BBcode for embedding a product button
+// [booqable_button id="ipad"]
+function booqable_button_bb($params) {
+  $options = shortcode_atts(array(
+    'id' => NULL
+  ), $params);
 
-  // default parameters
-  extract(shortcode_atts(array(
-    'id' => ''
-  ), $params));
-
-  return '<div class="booqable-product-button" data-id="' . $id . '"></div>';
+  return '<div class="booqable-product-button" ' . shortcode_options_to_data($options) . '></div>';
 }
+add_shortcode('booqable_button', 'booqable_button_bb');
+add_shortcode('booqable_product', 'booqable_button_bb');
 
-function booqable_product_detail_bb($params) {
+// BBcode for embedding a product detail view
+// [booqable_detail id="ipad"]
+function booqable_detail_bb($params) {
+  $options = shortcode_atts(array(
+    'id' => NULL
+  ), $params);
 
-  // default parameters
-  extract(shortcode_atts(array(
-    'id' => ''
-  ), $params));
-
-  return '<div class="booqable-product-detail" data-id="' . $id . '"></div>';
+  return '<div class="booqable-product-detail" ' . shortcode_options_to_data($options) . '></div>';
 }
+add_shortcode('booqable_detail', 'booqable_detail_bb');
 
-function booqable_product_list_bb($params) {
+// BBcode for embedding a product list
+// [booqable_list]
+// [booqable_list tags="tablets"]
+function booqable_list_bb($params) {
+  $options = shortcode_atts(array(
+    'tags'  => NULL,
+    'per'   => NULL,
+    'limit' => NULL
+  ), $params);
 
-  // default parameters
-  extract(shortcode_atts(array(
-    'tags' => ''
-  ), $params));
-
-  return '<div class="booqable-product-list" data-tags="' . $tags . '"></div>';
+  return '<div class="booqable-product-list" ' . shortcode_options_to_data($options) . '></div>';
 }
+add_shortcode('booqable_list', 'booqable_list_bb');
 
 ?>
