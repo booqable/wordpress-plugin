@@ -7,13 +7,20 @@ Stable tag: 4.7.5
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Booqable's Shop add-on offers you an online storefront where your customers can make rental reservations 24/7. You can implement the add-on on WordPress, Squarespace, Shopify, or pretty much any other website.
-
-When your customer makes a booking, an order is automatically generated in your Booqable backend.
-
 == Description ==
 
-**Booqable** is easy to use Online Rental Software. It's used by rental companies, large organizations and universities all over the world.
+**Booqable** is easy to use Online Rental Software.
+
+Whether you let your customers request a quote or make a reservation; treat them to a wonderful booking experience with our online reservations plugin.
+
+*Real-time availability*
+As you accept rental reservations on your website, the plugin automatically adjusts the availability of your items.
+
+*Get paid faster*
+Integrated payment processing allows you to accept all major credit cards from customers around the world.
+
+*Get started in minutes*
+The add-on is easy to integrate, and you can customize it as much or as little as you want.
 
 == Installation ==
 
