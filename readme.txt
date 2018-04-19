@@ -44,5 +44,7 @@ The add-on is easy to integrate, and you can customize it as much or as little a
 
 == Changelog ==
 
+= 2.1.0 =
+* Added product search shortcode
 = 2.0.0 =
 * First beta release
