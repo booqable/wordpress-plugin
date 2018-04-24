@@ -2,8 +2,8 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: Rental Software, Bookings, Reservations, Booking, booking engine, booking plugin, Booking Software, booking system, bookings, online booking, Rental Booking, Reservation, reservation plugin, reservation system, reservation software
 Requires at least: 2.0
-Tested up to: 4.7.5
-Stable tag: 4.7.5
+Tested up to: 4.9.4
+Stable tag: 4.9.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -46,5 +46,18 @@ The add-on is easy to integrate, and you can customize it as much or as little a
 
 = 2.1.0 =
 * Added product search shortcode
+= 2.0.2 =
+* Update compatible Wordpress versions
+
+= 2.0.1 =
+* Update plugin name
+
 = 2.0.0 =
+* First beta release
+
+= 1.0.1.beta =
+* Improve security
+* Add documentation
+
+= 1.0.0.beta =
 * First beta release
