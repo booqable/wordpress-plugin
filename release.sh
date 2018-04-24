@@ -23,7 +23,7 @@ read_var() {
     echo ${VAR[1]}
 }
 
-# ----- START EDITING HERE -----
+# ----- ADD THESE TO A '.env' FILE -----
 
 # THE GITHUB ACCESS TOKEN, GENERATE ONE AT: https://github.com/settings/tokens
 GITHUB_ACCESS_TOKEN=$(read_var GITHUB_ACCESS_TOKEN .env)
@@ -37,7 +37,13 @@ GITHUB_REPO_OWNER=$(read_var GITHUB_REPO_OWNER .env)
 # GITHUB Repository name
 GITHUB_REPO_NAME=$(read_var GITHUB_REPO_NAME .env)
 
-# ----- STOP EDITING HERE -----
+# SVN user who owns the wordpress repo
+SVN_USERNAME=$(read_var SVN_USERNAME .env)
+
+# SVN user password
+SVN_PASSWORD=$(read_var SVN_PASSWORD .env)
+
+# ----- STOP HERE -----
 
 set -e
 clear
@@ -73,8 +79,8 @@ rm -Rf $ROOT_PATH$TEMP_GITHUB_REPO
 # CHECKOUT SVN DIR IF NOT EXISTS
 if [[ ! -d $TEMP_SVN_REPO ]];
 then
-	echo "Checking out WordPress.org plugin repository"
-	svn checkout $SVN_REPO $TEMP_SVN_REPO || { echo "Unable to checkout repo."; exit 1; }
+    echo "Checking out WordPress.org plugin repository"
+    svn checkout $SVN_REPO $TEMP_SVN_REPO || { echo "Unable to checkout repo."; exit 1; }
 fi
 
 # CLONE GIT DIR
@@ -176,7 +182,7 @@ RESULT=$(curl --data "${API_JSON}" https://api.github.com/repos/${GITHUB_REPO_OW
 # DEPLOY
 echo ""
 echo "Committing to WordPress.org...this may take a while..."
-svn commit -m "Release "${VERSION}", see readme.txt for the changelog." || { echo "Unable to commit."; exit 1; }
+svn commit -m "Release "${VERSION}", see readme.txt for the changelog." --username "$SVN_USERNAME" --password "$SVN_PASSWORD" || { echo "Unable to commit."; exit 1; }
 
 # REMOVE THE TEMP DIRS
 echo "CLEANING UP"
