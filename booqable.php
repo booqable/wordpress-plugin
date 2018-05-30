@@ -31,7 +31,7 @@ add_action('wp_enqueue_scripts', 'add_booqable_js');
 // Insert client configuration
 function add_booqable_client_configuration_js() {
   ?>
-  <script>var booqableOptions = { company: '<?php echo get_option('booqable_company_name'); ?>' };</script>
+  <script>var booqableOptions = { company: '<?php echo get_option('booqable_company_name'); ?>', storeProvider: 'wordpress' };</script>
   <?php
 }
 add_action('wp_head', 'add_booqable_client_configuration_js');
