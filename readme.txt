@@ -44,8 +44,12 @@ The add-on is easy to integrate, and you can customize it as much or as little a
 
 == Changelog ==
 
+= 2.1.1 =
+* Added provider tracking fix
+
 = 2.1.0 =
 * Added product search shortcode
+
 = 2.0.2 =
 * Update compatible Wordpress versions
 
