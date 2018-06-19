@@ -11,29 +11,37 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 **Booqable** is easy to use Online Rental Software.
 
-Whether you let your customers request a quote or make a reservation; treat them to a wonderful booking experience with our online reservations plugin.
+Whether you let your customers request a quote or make a reservation; treat them to a beautiful booking experience with Booqable's Online Rental Plugin.
 
 *Real-time availability*
-As you accept rental reservations on your website, the plugin automatically adjusts the availability of your items.
+As you accept rental reservations on your website, the plugin automatically adjusts the availability of your items (optional).
+
+Flexible rental periods
+Set up fixed time slots, predefined durations, or let your customers choose a rental period freely.
 
 *Get paid faster*
-Integrated payment processing allows you to accept all major credit cards from customers around the world.
+Integrated payment processing allows you to accept online payments from customers around the world (optional).
+
+Customizable and translatable
+You get full control over descriptions, colors, and translations.
+
+Works on any website
+The add-on is fully responsive and works perfectly with any theme, on any device, even alongside e-commerce software like WooCommerce.
 
 *Get started in minutes*
-The add-on is easy to integrate, and you can customize it as much or as little as you want.
+Just install the plugin, add your products to any page or post, and you're ready to accept online rental reservations.
 
 == Installation ==
-
-1. Install the Booqable Booking plugin in your Wordpress admin by going to *'Plugins / Add New'* and  searching for *'Booqable'*,  **(or)** If doing a manual install, download the plugin and unzip into your `/wp-content/plugins/` directory.
-2. Activate the plugin through the 'Plugins' menu in WordPress.
+Install the Online Rental Shop in your WordPress admin by going to *Plugins* > *Add New* and searching for *'Booqable'* or -if doing a manual install- download the plugin and unzip into your `/wp-content/plugins/` directory.
+Activate the plugin through the 'Plugins' menu in WordPress.
 
 = Configuration =
 
-1. Signup for an account at https://signup.booqable.com if you haven't already.
-2. Enable the `Shop` add-on in the add-ons section.
-3. Start adding your inventory.
-4. Setup your company name in the Booqable plugin settings in Wordpress.
-5. Create a Wordpress **Post** or **Page** and embed a product, product detail, product button and/or product list component
+Sign up for a Booqable account at https://signup.booqable.com if you haven't already.
+In Booqable: make sure the `Shop` add-on in the add-ons section.
+In Booqable: make sure you have at least one product.
+In WordPress: Fill in your company ID in the Booqable plugin settings.
+In WordPress: Embed a product, product button or product list to any **post** or **page** using shortcodes.
 
 == Screenshots ==
 

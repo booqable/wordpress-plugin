@@ -1,0 +1,27 @@
+.bq-admin-header {
+  height: 50px;
+}
+
+.bq-admin-header img {
+  margin-left: -15px;
+}
+
+.bq-admin-header .bq-admin-help {
+  margin-top: 12px;
+}
+
+.bq-admin-pull-left {
+  float: left;
+}
+
+.bq-admin-pull-right {
+  float: right;
+}
+
+.bq-admin-wrap h2 {
+ margin-bottom: 0;
+}
+
+.bq-admin-wrap .bq-admin-subtitle {
+  margin-top: 5px;
+}
