@@ -52,6 +52,11 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.2.0 =
+* Improved user experience by improving settings page
+* Improved plugin security
+* Updated plugin description
+
 = 2.1.1 =
 * Added provider tracking fix
 

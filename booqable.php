@@ -4,7 +4,7 @@
    * Plugin Name: Booqable Online Rental Shop
    * Description: Enables your customers to make rental reservations from your website by Connecting Wordpress to the Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
    * Author: Booqable Rental Software
-   * Version: 2.1.1
+   * Version: 2.2.0
    * Author URI: https://booqable.com
    * Copyright: 2017 Booqable
    */
