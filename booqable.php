@@ -49,7 +49,7 @@ function admin_notice() {
 			return;
 		}
 
-		if ( $hook_suffix == 'plugins.php' && empty(trim(get_option('booqable_company_name'))) ) {
+		if ( $hook_suffix == 'plugins.php' && trim(get_option('booqable_company_name')) == false ) {
       include('admin/booqable_notice.php');
 		}
 }
