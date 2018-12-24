@@ -149,6 +149,9 @@ rm -Rf trunk/
 # COPY GIT DIR TO TRUNK
 cp -R $ROOT_PATH$TEMP_GITHUB_REPO trunk/
 
+# COPY ASSETS TO SVN ROOT
+cp -R $ROOT_PATH$TEMP_GITHUB_REPO/assets .
+
 # DO THE ADD ALL NOT KNOWN FILES UNIX COMMAND
 svn add --force * --auto-props --parents --depth infinity -q
 
