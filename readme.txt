@@ -44,6 +44,9 @@ The add-on is easy to integrate, and you can customize it as much or as little a
 
 == Changelog ==
 
+= 2.2.0 =
+* Added datepicker shortcode
+
 = 2.1.1 =
 * Added provider tracking fix
 
