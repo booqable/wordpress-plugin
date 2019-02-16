@@ -52,6 +52,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.3.1 =
+* Update branding
+
 = 2.3.0 =
 * Added datepicker shortcode
 
