@@ -2,34 +2,43 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: rental, booking system, booking calendar, bookings, reservations
 Requires at least: 2.0
-Tested up to: 4.9.4
+Tested up to: 5.2
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-**Booqable** is easy to use Online Rental Software.
+**Booqable** is a new way to rent out products on WordPress.
 
-Whether you let your customers request a quote or make a reservation; treat them to a beautiful booking experience with Booqable's Online Rental Plugin.
+Whether you let your customers make a reservation or request a quote; treat them to a beautiful booking experience with Booqable’s rental plugin.
 
-*Real-time availability*
+*Showcase your products*
+Generate embed codes to present your rental items exactly how you want, on any page or post.
+
+*Prevent overbooking*
 As you accept rental reservations on your website, the plugin automatically adjusts the availability of your items (optional).
 
-Flexible rental periods
-Set up fixed time slots, predefined durations, or let your customers choose a rental period freely.
+*Secure shopping cart*
+Add a secure shopping cart to WordPress. Define fixed rental durations, time slots, business hours, and more to match your workflow.
 
-*Get paid faster*
-Integrated payment processing allows you to accept online payments from customers around the world (optional).
+*Accept online payments*
+Use the Stripe and PayPal integrations to accept payments and charge damage deposits, or don’t charge at all to let your customers request a quote.
 
-Customizable and translatable
-You get full control over descriptions, colors, and translations.
+*Coupon codes*
+Offer discounts by creating coupon codes that customers can redeem at checkout.
 
-Works on any website
-The add-on is fully responsive and works perfectly with any theme, on any device, even alongside e-commerce software like WooCommerce.
+*Embed a date picker*
+Add a separate date picker to your website and let customers see real-time availability as they choose a period.
+
+*Customize and translate*
+Gain full control over product descriptions, colors, and translations.
+
+*Works with any theme*
+The rental plugin is fully responsive and works perfectly with any theme, on any device, even alongside e-commerce platforms like WooCommerce.
 
 *Get started in minutes*
-Just install the plugin, add your products to any page or post, and you're ready to accept online rental reservations.
+Just install the plugin, add your products to any page or post, and you’re ready to accept online rental reservations.
 
 == Installation ==
 Install the Online Rental Shop in your WordPress admin by going to *Plugins* > *Add New* and searching for *'Booqable'* or -if doing a manual install- download the plugin and unzip into your `/wp-content/plugins/` directory.
