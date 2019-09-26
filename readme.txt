@@ -61,6 +61,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.3.2 =
+* Update copy
+
 = 2.3.1 =
 * Update branding
 
