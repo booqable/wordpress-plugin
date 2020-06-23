@@ -4,7 +4,7 @@
    * Plugin Name: Booqable Online Rental Shop
    * Description: Enables your customers to make rental reservations from your website by Connecting Wordpress to the Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
    * Author: Booqable Rental Software
-   * Version: 2.4.0
+   * Version: 2.4.1
    * Author URI: https://booqable.com
    * Copyright: 2019 Booqable
    */
@@ -235,14 +235,14 @@ function initialize() {
   add_shortcode('booqable_detail', 'booqable_detail_bb');
   add_shortcode('booqable_list', 'booqable_list_bb');
   add_shortcode('booqable_search', 'booqable_search_bb');
-  add_shortcode('booqable_cart_button', 'booqable_cart_button_bb')
-  add_shortcode('booqable_embeddable_cart', 'booqable_embeddable_cart_bb')
-  add_shortcode('booqable_embeddable_cart_sidebar', 'booqable_embeddable_cart_sidebar_bb')
-  add_shortcode('booqable_embeddable_cart_lines', 'booqable_embeddable_cart_lines_bb')
-  add_shortcode('booqable_sidebar', 'booqable_sidebar_bb')
-  add_shortcode('booqable_sort', 'booqable_sort_bb')
-  add_shortcode('booqable_bar', 'booqable_bar_bb')
-  add_shortcode('booqable_categories', 'booqable_categories_bb')
+  add_shortcode('booqable_cart_button', 'booqable_cart_button_bb');
+  add_shortcode('booqable_embeddable_cart', 'booqable_embeddable_cart_bb');
+  add_shortcode('booqable_embeddable_cart_sidebar', 'booqable_embeddable_cart_sidebar_bb');
+  add_shortcode('booqable_embeddable_cart_lines', 'booqable_embeddable_cart_lines_bb');
+  add_shortcode('booqable_sidebar', 'booqable_sidebar_bb');
+  add_shortcode('booqable_sort', 'booqable_sort_bb');
+  add_shortcode('booqable_bar', 'booqable_bar_bb');
+  add_shortcode('booqable_categories', 'booqable_categories_bb');
 }
 initialize();
 

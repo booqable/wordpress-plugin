@@ -61,6 +61,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.4.1 =
+* Fixed a syntax issue
+
 = 2.4.0 =
 * Added embeddable cart shortcodes
 * Added category list shortcode
