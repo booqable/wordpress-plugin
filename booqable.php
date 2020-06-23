@@ -154,6 +154,70 @@ function booqable_datepicker_bb($params) {
 }
 add_shortcode('booqable_datepicker', 'booqable_datepicker_bb');
 
+// BBcode for embedding a cart button
+// [booqable_cart_button]
+function booqable_cart_button_bb($params) {
+  return '<div class="booqable-cart-button"></div>';
+}
+
+// BBcode for embedding the embeddable cart
+// [booqable_embeddable_cart]
+function booqable_embeddable_cart_bb($params) {
+  return '<div class="booqable-embeddable-cart"></div>';
+}
+
+// BBcode for embedding the embeddable cart lines
+// [booqable_embeddable_cart_lines]
+function booqable_embeddable_cart_lines_bb($params) {
+  return '<div class="booqable-embeddable-cart-lines"></div>';
+}
+
+// BBcode for embedding the embeddable cart sidebar
+// [booqable_embeddable_cart_sidebar]
+function booqable_embeddable_cart_sidebar_bb($params) {
+  return '<div class="booqable-embeddable-cart-sidebar"></div>';
+}
+
+// BBcode for embedding a sidebar with datepicker and categories
+// [booqable_sidebar]
+function booqable_sidebar_bb($params) {
+  return '<div class="booqable-sidebar"></div>';
+}
+
+// BBcode for embedding a sorting select
+// [booqable_sort]
+// [booqable_sort search-key="only-tablets"]
+function booqable_sort_bb($params) {
+  $options = shortcode_atts(array(
+    'search-key'  => NULL,
+  ), $params);
+
+  return '<div class="booqable-sort" ' . shortcode_options_to_data($options) . '></div>';
+}
+
+// BBcode for embedding a bar with search and sorting select
+// [booqable_bar]
+// [booqable_bar search-key="only-tablets"]
+function booqable_bar_bb($params) {
+  $options = shortcode_atts(array(
+    'search-key'  => NULL,
+  ), $params);
+
+  return '<div class="booqable-bar" ' . shortcode_options_to_data($options) . '></div>';
+}
+
+// BBcode for embedding a category list
+// [booqable_categories]
+// [booqable_categories search-key="only-tablets"]
+function booqable_categories_bb($params) {
+  $options = shortcode_atts(array(
+    'search-key'  => NULL,
+  ), $params);
+
+  return '<div class="booqable-categories" ' . shortcode_options_to_data($options) . '></div>';
+}
+
+
 function initialize() {
   add_action('admin_menu', 'booqable_admin_actions');
   add_action('admin_notices', 'admin_notice');
@@ -171,6 +235,14 @@ function initialize() {
   add_shortcode('booqable_detail', 'booqable_detail_bb');
   add_shortcode('booqable_list', 'booqable_list_bb');
   add_shortcode('booqable_search', 'booqable_search_bb');
+  add_shortcode('booqable_cart_button', 'booqable_cart_button_bb')
+  add_shortcode('booqable_embeddable_cart', 'booqable_embeddable_cart_bb')
+  add_shortcode('booqable_embeddable_cart_sidebar', 'booqable_embeddable_cart_sidebar_bb')
+  add_shortcode('booqable_embeddable_cart_lines', 'booqable_embeddable_cart_lines_bb')
+  add_shortcode('booqable_sidebar', 'booqable_sidebar_bb')
+  add_shortcode('booqable_sort', 'booqable_sort_bb')
+  add_shortcode('booqable_bar', 'booqable_bar_bb')
+  add_shortcode('booqable_categories', 'booqable_categories_bb')
 }
 initialize();
 
