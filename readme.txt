@@ -61,6 +61,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.4.3 =
+* Fixed embeddable cart button href option
+
 = 2.4.2 =
 * Fixed product list not filtering by category
 
