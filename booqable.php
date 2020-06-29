@@ -4,7 +4,7 @@
    * Plugin Name: Booqable Online Rental Shop
    * Description: Enables your customers to make rental reservations from your website by Connecting Wordpress to the Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
    * Author: Booqable Rental Software
-   * Version: 2.4.3
+   * Version: 2.4.4
    * Author URI: https://booqable.com
    * Copyright: 2019 Booqable
    */
@@ -141,7 +141,7 @@ function booqable_list_bb($params) {
 // [booqable_search search-key="only-tablets"]
 function booqable_search_bb($params) {
   $options = shortcode_atts(array(
-    'search-key'  => NULL,
+    'search-key'  => NULL
   ), $params);
 
   return '<div class="booqable-product-search" ' . shortcode_options_to_data($options) . '></div>';
@@ -159,8 +159,8 @@ add_shortcode('booqable_datepicker', 'booqable_datepicker_bb');
 // BBcode for embedding a cart button
 // [booqable_cart_button]
 function booqable_cart_button_bb($params) {
-    $options = shortcode_atts(array(
-    'href'  => NULL,
+  $options = shortcode_atts(array(
+    'href'  => NULL
   ), $params);
 
   return '<div class="booqable-cart-button" ' . shortcode_options_to_data($options) . '></div>';
@@ -175,13 +175,22 @@ function booqable_embeddable_cart_bb($params) {
 // BBcode for embedding the embeddable cart lines
 // [booqable_embeddable_cart_lines]
 function booqable_embeddable_cart_lines_bb($params) {
-  return '<div class="booqable-embeddable-cart-lines"></div>';
+  $options = shortcode_atts(array(
+    'compact'  => NULL
+  ), $params);
+
+  return '<div class="booqable-embeddable-cart-lines" ' . shortcode_options_to_data($options) . '></div>';
 }
 
 // BBcode for embedding the embeddable cart sidebar
 // [booqable_embeddable_cart_sidebar]
 function booqable_embeddable_cart_sidebar_bb($params) {
-  return '<div class="booqable-embeddable-cart-sidebar"></div>';
+  $options = shortcode_atts(array(
+    'continue-shopping'  => NULL,
+    'datepicker' => NULL
+  ), $params);
+
+  return '<div class="booqable-embeddable-cart-sidebar" ' . shortcode_options_to_data($options) . '></div>';
 }
 
 // BBcode for embedding a sidebar with datepicker and categories
@@ -195,7 +204,7 @@ function booqable_sidebar_bb($params) {
 // [booqable_sort search-key="only-tablets"]
 function booqable_sort_bb($params) {
   $options = shortcode_atts(array(
-    'search-key'  => NULL,
+    'search-key'  => NULL
   ), $params);
 
   return '<div class="booqable-sort" ' . shortcode_options_to_data($options) . '></div>';
@@ -217,7 +226,7 @@ function booqable_bar_bb($params) {
 // [booqable_categories search-key="only-tablets"]
 function booqable_categories_bb($params) {
   $options = shortcode_atts(array(
-    'search-key'  => NULL,
+    'search-key'  => NULL
   ), $params);
 
   return '<div class="booqable-categories" ' . shortcode_options_to_data($options) . '></div>';

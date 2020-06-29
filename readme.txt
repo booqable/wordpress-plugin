@@ -61,6 +61,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.4.4 =
+* Added new options to embeddable cart sidebar and lines
+
 = 2.4.3 =
 * Fixed embeddable cart button href option
 
