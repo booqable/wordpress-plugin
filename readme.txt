@@ -1,6 +1,6 @@
 === Plugin Name ===
 Contributors: booqable-rental-software, jhnvz
-Tags: rental, booking booking system, booking calendar, reservations
+Tags: rental, booking, reservations, booking system, booking calendar
 Requires at least: 2.0
 Tested up to: 5.2
 Stable tag: trunk
