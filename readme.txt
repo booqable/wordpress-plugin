@@ -14,13 +14,13 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 **Note:** This plugin is a free add-on to a paid Booqable subscription (free 14-day trial available).
 
 ### Embed products
-Present your products exactly how you want on any page or post. Booqable generates the embed codes to show individual products, product lists, or add buttons to existing product pages. 
+Present your products exactly how you want on any page or post. Booqable generates the embed codes to show individual products, product lists, or add buttons to existing product pages.
 
 ### Show multiple images
 Show your customers what your products look like, choose a thumbnail, and set a focal point. Perfect for showcasing detailed shots and different angles, so customers know what they are going to rent.
 
 ### Flexible date picker
-Control the selectable period to match your rental operation. Set up fixed durations and time-slots, prevent last-minute reservations, and set up business hours to create a seamless booking experience. 
+Control the selectable period to match your rental operation. Set up fixed durations and time-slots, prevent last-minute reservations, and set up business hours to create a seamless booking experience.
 
 ### Secure shopping cart and checkout
 Add a secure, frictionless checkout experience to your WordPress website, and capture all the information you need from customers by creating custom checkout fields.
@@ -29,7 +29,7 @@ Add a secure, frictionless checkout experience to your WordPress website, and ca
 Don't worry about availability conflicts and double bookings. Display product availability in real-time as customers select a rental period, and track your inventory in Booqable. Your online and in-store channels are always in sync, without any manual work.
 
 ### Advanced pricing rules
-No matter how you charge for rentals, Booqable offers flexible pricing options. Charge flat-fee rates, fixed fees, pricing structures, and create advanced pricing rules for seasonal and weekend pricing. 
+No matter how you charge for rentals, Booqable offers flexible pricing options. Charge flat-fee rates, fixed fees, pricing structures, and create advanced pricing rules for seasonal and weekend pricing.
 
 ### Accept payments with Stripe and PayPal
 Start taking payments with Booqable. Let your customers pay with their preferred payment method by accepting credit cards, PayPal, and many local payment methods. Additionally, you can charge security deposits and capture partial payments.
@@ -74,6 +74,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 4. Process payments
 
 == Changelog ==
+
+= 2.4.5 =
+* Update readme
 
 = 2.4.4 =
 * Added new options to embeddable cart sidebar and lines
