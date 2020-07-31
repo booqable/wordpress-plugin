@@ -25,14 +25,14 @@ Control the selectable period to match your rental operation. Set up fixed durat
 ### Secure shopping cart and checkout
 Add a secure, frictionless checkout experience to your WordPress website, and capture all the information you need from customers by creating custom checkout fields.
 
-### Real-time availability
-Don't worry about availability conflicts and double bookings. Display product availability in real-time as customers select a rental period (optional), and track your inventory in Booqable. Your online and in-store channels are always in sync, without any manual work.
+### Optional real-time availability
+Don't worry about availability conflicts and double bookings. Display product availability in real-time as customers select a rental period, and track your inventory in Booqable. Your online and in-store channels are always in sync, without any manual work.
 
 ### Advanced pricing rules
 No matter how you charge for rentals, Booqable offers flexible pricing options. Charge flat-fee rates, fixed fees, pricing structures, and create advanced pricing rules for seasonal and weekend pricing. 
 
 ### Accept payments with Stripe and PayPal
-Start taking payments with Booqable. Let your customers pay with their preferred payment method by accepting credit cards, PayPal, and many local payment methods. Additionally, you can charge security deposits, capture partial payments, and pre-authorize credit cards with the included Stripe and PayPal integrations.
+Start taking payments with Booqable. Let your customers pay with their preferred payment method by accepting credit cards, PayPal, and many local payment methods. Additionally, you can charge security deposits and capture partial payments.
 
 ### Offer discounts
 Increase conversions and keep customers coming back by offering coupon codes. Offer percentage and fixed-value discounts that customers can redeem online and in-store.
@@ -52,7 +52,7 @@ You have full control over the booking process and the look and feel of your ren
 The Booqable plugin is fully responsive and works with any WordPress theme, even alongside e-commerce platforms like WooCommerce.
 
 ### Steps to get started
-It's easy to get started with Booqable. With this plugin and a paid Booqable subscription (free 14-day trial available), you can start accepting reservations right away. After creating your account, you can manage your settings, products, and bookings in Booqable.
+It's easy to get started with Booqable. With this plugin and a paid Booqable subscription, you can start accepting reservations right away. After creating your account, you can manage your settings, products, and bookings in Booqable.
 
 == Installation ==
 Install the Online Rental Shop in your WordPress admin by going to *Plugins* > *Add New* and searching for *'Booqable'* or -if doing a manual install- download the plugin and unzip into your `/wp-content/plugins/` directory.
