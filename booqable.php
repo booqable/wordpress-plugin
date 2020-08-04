@@ -11,7 +11,7 @@
 
 // If this file is called directly, abort.
 if ( ! defined( 'WPINC' ) ) {
-	die;
+  die;
 }
 
 //
@@ -36,22 +36,22 @@ function admin_resources($hook) {
 }
 
 function admin_settings_link($links) {
-    $settings_link = '<a href="options-general.php?page=Booqable">' . __( 'Settings' ) . '</a>';
-    array_unshift( $links, $settings_link );
-  	return $links;
+  $settings_link = '<a href="options-general.php?page=Booqable">' . __( 'Settings' ) . '</a>';
+  array_unshift( $links, $settings_link );
+  return $links;
 }
 
 function admin_notice() {
-	global $hook_suffix;
+  global $hook_suffix;
 
-		if ( in_array( $hook_suffix, array( 'jetpack_page_akismet-key-config', 'settings_page_akismet-key-config' ) ) ) {
-			// This page manages the notices and puts them inline where they make sense.
-			return;
-		}
+  if ( in_array( $hook_suffix, array( 'jetpack_page_akismet-key-config', 'settings_page_akismet-key-config' ) ) ) {
+    // This page manages the notices and puts them inline where they make sense.
+    return;
+  }
 
-		if ( $hook_suffix == 'plugins.php' && trim(get_option('booqable_company_name')) == false ) {
-      include('admin/booqable_notice.php');
-		}
+  if ( $hook_suffix == 'plugins.php' && trim(get_option('booqable_company_name')) == false ) {
+    include('admin/booqable_notice.php');
+  }
 }
 
 //
