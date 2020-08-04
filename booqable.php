@@ -60,7 +60,8 @@ function admin_notice() {
 
 // Load client script
 function add_booqable_js() {
-  wp_enqueue_script('booqable_v2', 'https://d4lmxg2kcswpo.cloudfront.net/assets/store/booqable_v2.js', array(), '2.0.0', true);
+  $asset_url = 'https://' . get_option('booqable_company_name') . '.assets.booqable.com/v2/booqable.js';
+  wp_enqueue_script('booqable_v2', $asset_url, array(), '2.0.0', true);
 }
 
 // Insert client configuration
