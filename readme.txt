@@ -75,6 +75,9 @@ In WordPress: Embed a product, product button or product list to any **post** or
 
 == Changelog ==
 
+= 2.4.6 =
+* Update asset URL
+
 = 2.4.5 =
 * Update readme
 
