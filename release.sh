@@ -94,7 +94,7 @@ cd $ROOT_PATH$TEMP_GITHUB_REPO
 clear
 git fetch origin
 echo "WHICH BRANCH DO YOU WISH TO DEPLOY?"
-git branch -r || { echo "Unable to list branches."; exit 1; }
+git branch -r | less -FRX || { echo "Unable to list branches."; exit 1; }
 echo ""
 read -p "origin/" BRANCH
 
