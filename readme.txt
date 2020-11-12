@@ -61,6 +61,11 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.7 =
+* Updated banners and screenshots
+* Updated description
+* Updated tags
+
 = 2.4.4 =
 * Added new options to embeddable cart sidebar and lines
 
