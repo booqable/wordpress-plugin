@@ -15,10 +15,10 @@ Our lightweight WordPress plugin enables you to accept online bookings, while ou
 
 **Note:** This WordPress plugin is a free, lightweight add-on to a paid Booqable subscription (Free trial available).
 
-*Plugin Features*
+### Plugin Features
 With Booqable, you have full control over the booking process. Present your products exactly how you want, customize the plugin to match your rental operation, and show real-time availability to reduce the risk of double bookings. Additionally, Booqable comes packed with features that support the needs of rental businesses of any size, in every industry.
 
-*Explore All Features*
+### Explore All Features
 - Add your rental products to any page or post
 - Categories, search bar, and custom sorting options
 - Create variations for different sizes and colors
@@ -60,6 +60,10 @@ To embed products:
 4. Online payment methods
 
 == Changelog ==
+
+= 2.4.8 =
+* Updated screenshots
+* Improved description formatting
 
 = 2.4.7 =
 * Updated banners and screenshots
