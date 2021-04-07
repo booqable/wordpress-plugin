@@ -59,6 +59,11 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.10 =
+* Updated plugin name
+* Updated tested up to
+* Updated description
+
 = 2.4.9 =
 * Updated tested up to
 * Updated description
