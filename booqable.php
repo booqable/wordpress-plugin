@@ -1,12 +1,12 @@
 <?php
   /**
    * @wordpress-plugin
-   * Plugin Name: Booqable Online Rental Shop
-   * Description: Enables your customers to make rental reservations from your website by Connecting Wordpress to the Booqable Reservation Software. Reservations are securely stored in the Booqable backoffice app.
+   * Plugin Name: Booqable Rental Plugin
+   * Description: Rental plugin for WordPress. Turn your website into a complete online rental store by connecting your Booqable account to WordPress.
    * Author: Booqable Rental Software
    * Version: 2.4.9
    * Author URI: https://booqable.com
-   * Copyright: 2020 Booqable
+   * Copyright: 2021 Booqable
    */
 
 // If this file is called directly, abort.
