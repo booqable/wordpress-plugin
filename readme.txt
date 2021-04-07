@@ -2,14 +2,14 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: rental, booking system, booking calendar, booking, availability
 Requires at least: 2.0
-Tested up to: 5.6
+Tested up to: 5.7
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 == Description ==
 
-**Connect your Booqable account to your WordPress website**
+**Rental plugin for WordPress. Turn your website into a complete online rental store by connecting your Booqable account to WordPress.**
 
 Booqable is the all-in-one rental software for your orders, inventory, documents, and payments. It’s the complete toolkit for running your rental business. 
 
@@ -58,6 +58,11 @@ To embed products:
 4. Online payment methods
 
 == Changelog ==
+
+= 2.4.10 =
+* Updated plugin name
+* Updated tested up to
+* Updated description
 
 = 2.4.9 =
 * Updated tested up to
