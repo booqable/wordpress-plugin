@@ -2,7 +2,7 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: rental, booking system, booking calendar, booking, availability
 Requires at least: 2.0
-Tested up to: 5.7
+Tested up to: 5.8.1
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -52,12 +52,16 @@ To embed products:
 
 == Screenshots ==
 
-1. Product cards, date picker, and categories
-2. Rental product with real-time availability
-3. Intuitive shopping cart and checkout experience
-4. Online payment methods
+1. Allow people to browse and book your inventory online
+2. Quickly add your products by copy-pasting shortcodes
+3. Show when items are available to rent (optional)
+4. Let your customers pay online or request a quote
 
 == Changelog ==
+
+= 2.4.11 =
+* Updated screenshots
+* Updated tested up to
 
 = 2.4.10 =
 * Updated plugin name
