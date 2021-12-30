@@ -59,6 +59,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.12 =
+* Updated brand assets
+
 = 2.4.11 =
 * Updated screenshots
 * Updated tested up to
