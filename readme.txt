@@ -2,7 +2,7 @@
 Contributors: booqable-rental-software, jhnvz
 Tags: rental, booking system, booking calendar, booking, availability
 Requires at least: 2.0
-Tested up to: 5.8.1
+Tested up to: 6.0
 Stable tag: trunk
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -58,6 +58,9 @@ To embed products:
 4. Let your customers pay online or request a quote
 
 == Changelog ==
+
+= 2.4.13 =
+* Updated tested up to
 
 = 2.4.12 =
 * Updated brand assets
