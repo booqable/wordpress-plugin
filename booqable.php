@@ -60,14 +60,14 @@ function admin_notice() {
 
 // Load client script
 function add_booqable_js() {
-  $asset_url = 'https://' . get_option('booqable_company_name') . '.assets.booqable.com/v2/booqable.js';
+  $asset_url = 'https://' . esc_attr(get_option('booqable_company_name')) . '.assets.booqable.com/v2/booqable.js';
   wp_enqueue_script('booqable_v2', $asset_url, array(), '2.0.0', true);
 }
 
 // Insert client configuration
 function add_booqable_client_configuration_js() {
   ?>
-  <script>var booqableOptions = { company: '<?php echo get_option('booqable_company_name'); ?>', storeProvider: 'wordpress' };</script>
+  <script>var booqableOptions = { company: '<?php echo esc_attr(get_option('booqable_company_name')); ?>', storeProvider: 'wordpress' };</script>
   <?php
 }
 
@@ -80,7 +80,7 @@ function shortcode_options_to_data($options) {
   $data = implode(' ', array_map(
     function ($v, $k) {
       if (! empty($v)) {
-        return sprintf("data-%s=\"%s\"", $k, $v);
+        return sprintf("data-%s=\"%s\"", $k, esc_attr($v));
       }
     },
     $options,
