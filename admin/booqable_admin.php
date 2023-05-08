@@ -14,12 +14,10 @@
 
 <div class="wrap bq-admin-wrap">
   <div class="card bq-admin-header">
-    <div class="bq-admin-pull-left">
+    <div class="bq-admin-logo">
       <img src="<?php echo esc_url( plugins_url( '../assets/logo.png', __FILE__ ) ); ?>" alt="Booqable" />
     </div>
-    <div class="bq-admin-pull-right">
-      <a href="https://help.booqable.com/" target="_blank" rel="noopener" class="button bq-admin-help">Help</a>
-    </div>
+    <a href="https://help.booqable.com/en/articles/830658" target="_blank" rel="noopener" class="button bq-admin-help">Help</a>
   </div>
 
   <div class="card">
@@ -36,7 +34,7 @@
             </th>
             <td>
               <input type="text" name="booqable_company_name" value="<?php echo $company; ?>" size="20" class="regular-text">
-              <p class="description"><?php _e("Find your <b>Company ID</b> in your Booqable account under <b>Settings > Online reservations > Installation > WordPress plugin</b>" ); ?></p>
+              <p class="description"><?php _e("Find your <b>Company ID</b> in your Booqable account under <b>Settings > Online reservations > Website integration > WordPress plugin</b>" ); ?></p>
             </td>
           </tr>
         </tbody>
