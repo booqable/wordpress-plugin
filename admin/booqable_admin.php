@@ -62,13 +62,13 @@
           </tr>
         </tbody>
       </table>
-      <a href="https://help.booqable.com/online-reservations/wordpress/showing-products-on-your-wordpress-site" target="_blank" rel="noopener"><?php _e("More embed options"); ?></a>
+      <a href="https://help.booqable.com/en/articles/4163445" target="_blank" rel="noopener"><?php _e("More embed options"); ?></a>
   </div>
 
   <div class="card">
     <h2><?php _e("3. Customize your online store"); ?></h2>
     <p class="bq-admin-subtitle"><?php _e("Configure branding, rental periods, opening hours, online payments and more."); ?></p>
     <hr />
-    <a href="https://help.booqable.com/online-reservations" target="_blank" rel="noopener"><?php _e("Customize online store"); ?></a>
+    <a href="https://help.booqable.com/en/collections/3501889" target="_blank" rel="noopener"><?php _e("Customize online store"); ?></a>
   </div>
 </div>
