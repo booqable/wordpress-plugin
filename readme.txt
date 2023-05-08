@@ -59,6 +59,10 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.14 =
+* Improved plugin interface
+* Improved help text
+
 = 2.4.13 =
 * Sanitize attributes
 * Updated tested up to
