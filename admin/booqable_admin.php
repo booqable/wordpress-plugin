@@ -33,7 +33,7 @@
               <label for="booqable_company_name"><?php _e("Company ID"); ?></label>
             </th>
             <td>
-              <input type="text" name="booqable_company_name" value="<?php echo $company; ?>" size="20" class="regular-text">
+              <input type="text" name="booqable_company_name" value="<?php echo esc_attr($company); ?>" size="20" class="regular-text">
               <p class="description"><?php _e("Find your <b>Company ID</b> in your Booqable account under <b>Settings > Online reservations > Website integration > WordPress plugin</b>" ); ?></p>
             </td>
           </tr>
@@ -41,7 +41,7 @@
       </table>
 
       <p class="submit">
-        <input type="submit" name="Submit" value="<?php _e('Update Options', 'booqable_trdom') ?>" class="button button-primary" />
+        <input type="submit" name="Submit" value="<?php esc_attr_e('Update Options', 'booqable_trdom') ?>" class="button button-primary" />
       </p>
     </form>
   </div>
