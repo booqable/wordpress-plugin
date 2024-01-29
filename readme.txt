@@ -59,6 +59,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.17 =
+* Updated tested up to
+
 = 2.4.16 =
 * Escape attributes for company id input
 
