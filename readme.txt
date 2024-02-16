@@ -13,7 +13,7 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
 This plugin seamlessly connects your WordPress website to your Booqable account, empowering you to effortlessly incorporate online booking functionality and kickstart your rental business online.
 
-**Note:** You need a Booqable subscription to use this plugin. Learn more about Booqable and its pricing at <a href="https://booqable.com/">booqable.com</a>.
+**Note:** You can get started with a free trial to use this plugin. Learn more about Booqable and its pricing at <a href="https://booqable.com/">booqable.com</a>.
 
 ## Key Features:
 
