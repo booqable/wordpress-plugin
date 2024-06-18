@@ -29,7 +29,7 @@ Manage your inventory with a comprehensive booking calendar featuring real-time 
 Benefit from a hassle-free hosted checkout system. Booqable handles everything from processing paid orders to managing customer inquiries, ensuring a swift checkout experience and automatically sending booking confirmations.
 
 ### Secure Online Payments:
-Easily integrate with Stripe and PayPal to accept a variety of payment methods, including credit cards and local options. Customize your checkout process by setting payment terms, accepting security deposits, and enabling coupon codes.
+Easily integrate with Stripe and PayPal to accept over 40 local and international payment methods, including credit cards and local options. Customize your checkout process by setting payment terms, accepting security deposits, and enabling coupon codes.
 
 ### Easy Setup:
 Install the WordPress rental plugin, connect to your Booqable account, and start adding products. Don’t have a Booqable account? Sign up for a <a href="https://signup.booqable.com/">free 14-day trial</a> and upgrade anytime to unlock more features.
