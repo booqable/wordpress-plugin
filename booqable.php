@@ -4,7 +4,7 @@
    * Plugin Name: Booqable Rental Plugin
    * Description: Rental plugin for WordPress. Turn your website into a complete online rental store by connecting your Booqable account to WordPress.
    * Author: Booqable Rental Software
-   * Version: 2.4.18
+   * Version: 2.4.19
    * Author URI: https://booqable.com
    * Copyright: 2023 Booqable
    */

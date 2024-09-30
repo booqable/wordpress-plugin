@@ -61,6 +61,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.19 =
+* Added collection shortcode
+
 = 2.4.18 =
 * Updated readme
 
