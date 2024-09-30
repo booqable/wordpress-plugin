@@ -18,7 +18,7 @@ This plugin seamlessly connects your WordPress website to your Booqable account,
 ## Key Features:
 
 ### Effortless Product Integration:
-Utilize customizable shortcodes to showcase your rental products across your WordPress pages. Enjoy full support for categories, variations, bundles, multiple images, and flexible pricing settings.
+Utilize customizable shortcodes to showcase your rental products across your WordPress pages. Enjoy full support for collections, variations, bundles, multiple images, and flexible pricing settings.
 
 ### Real-Time Availability:
 Stay ahead with a comprehensive booking calendar featuring real-time inventory availability updates. Whether you're receiving orders online or in person, Booqable ensures your inventory remains synchronized, preventing any risk of overbooking.
