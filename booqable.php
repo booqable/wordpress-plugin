@@ -123,11 +123,12 @@ function booqable_detail_bb($params) {
 // BBcode for embedding a product list
 // [booqable_list]
 // [booqable_list tags="tablets"]
-// [booqable_list categories="apple"]
+// [booqable_list collections="apple"]
 function booqable_list_bb($params) {
   $options = shortcode_atts(array(
     'tags'        => NULL,
     'categories'  => NULL,
+    'collections' => NULL,
     'per'         => NULL,
     'limit'       => NULL,
     'show-search' => NULL,
@@ -194,7 +195,7 @@ function booqable_embeddable_cart_sidebar_bb($params) {
   return '<div class="booqable-embeddable-cart-sidebar" ' . shortcode_options_to_data($options) . '></div>';
 }
 
-// BBcode for embedding a sidebar with datepicker and categories
+// BBcode for embedding a sidebar with datepicker and collections
 // [booqable_sidebar]
 function booqable_sidebar_bb($params) {
   return '<div class="booqable-sidebar"></div>';
@@ -222,9 +223,9 @@ function booqable_bar_bb($params) {
   return '<div class="booqable-bar" ' . shortcode_options_to_data($options) . '></div>';
 }
 
+// DEPRECATED: Please use [booqable_collection] instead
 // BBcode for embedding a category list
 // [booqable_categories]
-// [booqable_categories search-key="only-tablets"]
 function booqable_categories_bb($params) {
   $options = shortcode_atts(array(
     'search-key'  => NULL
