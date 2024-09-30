@@ -233,6 +233,12 @@ function booqable_categories_bb($params) {
   return '<div class="booqable-categories" ' . shortcode_options_to_data($options) . '></div>';
 }
 
+// BBcode for embedding a collection list
+// [booqable_collection]
+function booqable_collections_bb($params) {
+  return '<div class="booqable-collections"></div>';
+}
+
 
 function initialize() {
   add_action('admin_menu', 'booqable_admin_actions');
@@ -259,6 +265,7 @@ function initialize() {
   add_shortcode('booqable_sort', 'booqable_sort_bb');
   add_shortcode('booqable_bar', 'booqable_bar_bb');
   add_shortcode('booqable_categories', 'booqable_categories_bb');
+  add_shortcode('booqable_collections', 'booqable_collections_bb');
 }
 initialize();
 
