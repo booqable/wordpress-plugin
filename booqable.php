@@ -4,7 +4,7 @@
    * Plugin Name: Booqable Rental Plugin
    * Description: Rental plugin for WordPress. Turn your website into a complete online rental store by connecting your Booqable account to WordPress.
    * Author: Booqable Rental Software
-   * Version: 2.4.18
+   * Version: 2.4.19
    * Author URI: https://booqable.com
    * Copyright: 2023 Booqable
    */
@@ -123,11 +123,12 @@ function booqable_detail_bb($params) {
 // BBcode for embedding a product list
 // [booqable_list]
 // [booqable_list tags="tablets"]
-// [booqable_list categories="apple"]
+// [booqable_list collections="apple"]
 function booqable_list_bb($params) {
   $options = shortcode_atts(array(
     'tags'        => NULL,
     'categories'  => NULL,
+    'collections' => NULL,
     'per'         => NULL,
     'limit'       => NULL,
     'show-search' => NULL,
@@ -194,7 +195,7 @@ function booqable_embeddable_cart_sidebar_bb($params) {
   return '<div class="booqable-embeddable-cart-sidebar" ' . shortcode_options_to_data($options) . '></div>';
 }
 
-// BBcode for embedding a sidebar with datepicker and categories
+// BBcode for embedding a sidebar with datepicker and collections
 // [booqable_sidebar]
 function booqable_sidebar_bb($params) {
   return '<div class="booqable-sidebar"></div>';
@@ -222,15 +223,21 @@ function booqable_bar_bb($params) {
   return '<div class="booqable-bar" ' . shortcode_options_to_data($options) . '></div>';
 }
 
+// DEPRECATED: Please use [booqable_collection] instead
 // BBcode for embedding a category list
 // [booqable_categories]
-// [booqable_categories search-key="only-tablets"]
 function booqable_categories_bb($params) {
   $options = shortcode_atts(array(
     'search-key'  => NULL
   ), $params);
 
   return '<div class="booqable-categories" ' . shortcode_options_to_data($options) . '></div>';
+}
+
+// BBcode for embedding a collection list
+// [booqable_collection]
+function booqable_collections_bb($params) {
+  return '<div class="booqable-collections"></div>';
 }
 
 
@@ -259,6 +266,7 @@ function initialize() {
   add_shortcode('booqable_sort', 'booqable_sort_bb');
   add_shortcode('booqable_bar', 'booqable_bar_bb');
   add_shortcode('booqable_categories', 'booqable_categories_bb');
+  add_shortcode('booqable_collections', 'booqable_collections_bb');
 }
 initialize();
 
