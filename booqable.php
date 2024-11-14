@@ -6,7 +6,7 @@
    * Author: Booqable Rental Software
    * Version: 2.4.20
    * Author URI: https://booqable.com
-   * Copyright: 2023 Booqable
+   * Copyright: 2024 Booqable
    */
 
 // If this file is called directly, abort.
