@@ -63,6 +63,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.21 =
+* Updated tested up to
+
 = 2.4.20 =
 * Updated readme
 
