@@ -53,11 +53,15 @@ To embed products:
 == Screenshots ==
 
 1. Allow people to browse and book your inventory online
-2. Quickly add your products by copy-pasting shortcodes
-3. Show when items are available to rent (optional)
-4. Let your customers pay online or request a quote
+2. Show when items are available to rent (optional)
+3. Let your customers pay online or request a quote
+4. Manage orders in your Booqable account
+5. Quickly add your products by copy-pasting shortcodes
 
 == Changelog ==
+
+= 2.4.25 =
+* Update screenshot descriptions
 
 = 2.4.24 =
 * Change image formats
