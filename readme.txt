@@ -59,6 +59,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.24 =
+* Change image formats
+
 = 2.4.23 =
 * Improve description formatting
 
