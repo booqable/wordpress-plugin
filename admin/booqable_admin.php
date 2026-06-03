@@ -1,5 +1,10 @@
 <?php
   if(isset($_POST['booqable_hidden']) && $_POST['booqable_hidden'] == 'Y') {
+    // Verify CSRF nonce
+    if (!isset($_POST['booqable_nonce']) || !wp_verify_nonce($_POST['booqable_nonce'], 'booqable_save_settings')) {
+      wp_die(__('Security check failed. Please try again.'));
+    }
+
     //Form data sent
     $company = sanitize_text_field($_POST['booqable_company_name']);
     update_option('booqable_company_name', $company);
