@@ -1,5 +1,5 @@
 <?php
-  if($_POST['booqable_hidden'] == 'Y') {
+  if(isset($_POST['booqable_hidden']) && $_POST['booqable_hidden'] == 'Y') {
     //Form data sent
     $company = sanitize_text_field($_POST['booqable_company_name']);
     update_option('booqable_company_name', $company);
@@ -26,6 +26,7 @@
     <hr />
     <form name="booqable_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
       <input type="hidden" name="booqable_hidden" value="Y">
+      <?php wp_nonce_field('booqable_save_settings', 'booqable_nonce'); ?>
       <table class="form-table">
         <tbody>
           <tr>
