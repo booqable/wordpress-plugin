@@ -60,6 +60,9 @@ To embed products:
 
 == Changelog ==
 
+= 2.4.26 =
+* Solve PHP 8.x warnings
+
 = 2.4.25 =
 * Update screenshot descriptions
 
