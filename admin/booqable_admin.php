@@ -1,14 +1,14 @@
 <?php
-  if($_POST['booqable_hidden'] == 'Y') {
+  $company = get_option('booqable_company_name');
+
+  if (isset($_POST['booqable_hidden']) && wp_unslash($_POST['booqable_hidden']) == 'Y') {
     //Form data sent
-    $company = sanitize_text_field($_POST['booqable_company_name']);
+    $company = isset($_POST['booqable_company_name']) ? sanitize_text_field(wp_unslash($_POST['booqable_company_name'])) : '';
     update_option('booqable_company_name', $company);
 
     ?>
     <div class="updated"><p><strong><?php _e('Options saved.' ); ?></strong></p></div>
     <?php
-  } else {
-    $company = get_option('booqable_company_name');
   }
 ?>
 
