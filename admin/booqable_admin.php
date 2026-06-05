@@ -6,7 +6,7 @@
     }
 
     //Form data sent
-    $company = sanitize_text_field($_POST['booqable_company_name']);
+    $company = isset($_POST['booqable_company_name']) ? sanitize_text_field(wp_unslash($_POST['booqable_company_name'])) : '';
     update_option('booqable_company_name', $company);
 
     ?>
@@ -29,7 +29,7 @@
     <h2><?php _e("1. Connect to your Booqable account"); ?></h2>
     <p class="bq-admin-subtitle"><?php _e("Don't have a Booqable account? <a href=\"https://signup.booqable.com/\" target=\"_blank\" rel=\"noopener\">Get started for free</a>."); ?></p>
     <hr />
-    <form name="booqable_form" method="post" action="<?php echo str_replace( '%7E', '~', $_SERVER['REQUEST_URI']); ?>">
+    <form name="booqable_form" method="post" action="<?php echo esc_url( str_replace( '%7E', '~', $_SERVER['REQUEST_URI'] ) ); ?>">
       <input type="hidden" name="booqable_hidden" value="Y">
       <?php wp_nonce_field('booqable_save_settings', 'booqable_nonce'); ?>
       <table class="form-table">
